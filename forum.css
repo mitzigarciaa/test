@@ -1,0 +1,248 @@
+/* Root and Global Styles */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: #E8F0FE;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #6351e4;
+    color: #fff;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #7A6AE6;
+    transform: scale(1.05);
+}
+
+
+/* Forum Banner */
+.forum-banner {
+    text-align: center;
+    padding: 3rem 2rem;
+    color: #6351e4;
+}
+
+.forum-banner h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.forum-banner p {
+    font-size: 1.5rem;
+}
+
+
+/* Forum Categories Section */
+.forum-categories {
+    padding: 2rem;
+    text-align: center;
+}
+
+.forum-categories h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.category-list {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+.category {
+    background-color: #f1f1f1;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 20%;
+    text-align: center;
+}
+
+.category h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.category p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.category a {
+    background-color: #6351e4;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.category a:hover {
+    background-color: #523ee7;
+}
+
+
+/* Reporting Section */
+.report-form {
+    background-color: var(--primary-color);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.report-form h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.report-form label {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    display: block;
+    color: var(--text-color);
+}
+
+.report-form textarea {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+.report-form button {
+    background-color: #6351e4;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.report-form button:hover {
+    background-color: #523ee7;
+}
+
+
+/* Hide the confirmation message */
+.hidden {
+    display: none;
+}
+
+
+/* Footer */
+footer {
+    background-color: #6351e4;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+@media (max-width: 768px) {
+    
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: center;
+    }
+
+    .logo {
+        font-size: 20px; 
+        margin-bottom: 1rem;
+    }
+
+    /* Navigation */
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 0.5em 0;
+    }
+
+
+    .category-list {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .category {
+        width: 80%; 
+        margin-bottom: 1.5rem;
+    }
+
+    .forum-categories h2 {
+        font-size: 2rem;
+    }
+
+    .forum-banner h1 {
+        font-size: 2.5rem;
+    }
+
+    /* Report Section */
+    .report-form {
+        padding: 1.5rem;
+    }
+
+    .report-form h2 {
+        font-size: 1.5rem;
+    }
+
+    .report-form textarea {
+        font-size: 0.9rem;
+    }
+
+    .report-form button {
+        font-size: 1rem;
+        padding: 0.8rem 1.5rem;
+    }
+
+    /* Footer */
+    footer {
+        font-size: 0.9rem;
+    }
+}

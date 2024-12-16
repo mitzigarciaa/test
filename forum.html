@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discussion Forum | Skill Swap</title>
+    <link rel="stylesheet" href="forum.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="forum.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">SkillSwap</div>
+        <nav>
+            <ul>
+                <li><a href="https://neslihumber.github.io/group9_project/index.html">Home</a></li>
+                <li><a href="https://neslihumber.github.io/group9_project/about.html">About Us</a></li>
+                <li><a href="https://neslihumber.github.io/group9_project/user.html">My Account</a></li>
+                <li><a href="https://neslihumber.github.io/group9_project/find_swap.html">Find Swap</a></li>
+                <li><a href="https://neslihumber.github.io/group9_project/groups.html">Groups</a></li>
+                <li><a href="https://neslihumber.github.io/group9_project/forum.html">Forum</a></li>
+                <li><a href="https://neslihumber.github.io/group9_project/trends.html">Trends & News</a></li>
+                <li><a href="https://neslihumber.github.io/group9_project/shop.html">Shop</a></li>
+                <li><a href="https://neslihumber.github.io/group9_project/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Forum Banner -->
+        <section class="forum-banner">
+            <h1>Welcome to the Skill Swap Discussion Forum</h1>
+            <p>Discuss programming skills, share experiences, and help each other grow!</p>
+        </section>
+
+        <section class="forum-categories">
+            <h2>Forum Categories</h2>
+            <div class="category-list">
+                <div class="category">
+                    <h3>Programming Languages</h3>
+                    <p>Discuss various programming languages such as Python, JavaScript, C++, and more.</p>
+                    <a href="forum_programming-languages.html">Enter</a>
+                </div>
+                <div class="category">
+                    <h3>Web Development</h3>
+                    <p>Share tips, ask questions, and exchange ideas about HTML, CSS, JavaScript, and web frameworks.</p>
+                    <a href="forum_web-development.html">Enter</a>
+                </div>
+                <div class="category">
+                    <h3>Data Science & AI</h3>
+                    <p>Engage in discussions about machine learning, AI, data analysis, and more.</p>
+                    <a href="forum_data-science-ai.html">Enter</a>
+                </div>
+                <div class="category">
+                    <h3>Other Categories</h3>
+                    <p>Talk about other categories like tools, methodologies, and techniques for building high-quality software.</p>
+                    <a href="forum_other.html">Enter</a>
+                </div>      
+            </div>
+        </section>
+        
+        <!-- Report Section -->
+        <div class="report-form">
+            <h2>Report Content</h2>
+            <form id="reportForm">
+                <label for="reportContent">Enter your report:</label>
+                <textarea id="reportContent" name="reportContent" rows="5" placeholder="Describe your report here..."></textarea>
+                <button type="submit">Submit Report</button>
+            </form>
+            <p id="confirmationMessage" class="hidden">Report submitted successfully! We will review the content.</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Skill Swap. All rights reserved.</p>
+    </footer>
+</body>
+</html>

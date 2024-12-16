@@ -1,0 +1,301 @@
+:root {
+    --background-color: #E8F0FE;
+    --secondary-color:  #6351e4;
+    --text-color: #596dd4;
+    --button-text-color: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--primary-color);
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Forum Styles */
+.forum-banner {
+    text-align: center;
+    padding: 3rem 2rem;
+    background: var(--secondary-color);
+    color: white;
+}
+
+.forum-banner h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.forum-banner p {
+    font-size: 1.5rem;
+}
+
+.posts {
+    padding: 2rem;
+    background-color: var(--primary-color);
+}
+
+.posts h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+/* Post */
+.post {
+    background-color: #f1f1f1;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.post .author {
+    font-size: 1rem;
+    color: #777;
+}
+
+/* Add title section */
+.post-form {
+    padding: 2rem;
+    background-color: var(--primary-color);
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.post-form input[type="text"] {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 8px;
+    border: 2px solid #ccc;
+    background-color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Focus State for Title Box */
+.post-form input[type="text"]:focus {
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 8px rgba(112, 145, 230, 0.5);
+    outline: none;
+}
+
+/* Label for Title */
+.post-form label[for="title"] {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    display: block;
+    color: var(--text-color);
+}
+
+/* Textarea */
+textarea {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Button */
+button {
+    background-color: var(--secondary-color);
+    color: var(--button-text-color);
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 1rem; 
+    margin-bottom: 1rem;
+}
+
+button:hover {
+    background-color: #384064;
+}
+
+/* Post styling */
+.post {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+/* Reply section styling */
+.replies-section {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+}
+
+.replies-section h4 {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
+
+.replies p {
+    font-size: 0.95em;
+    margin-left: 20px;
+    color: #555;
+}
+
+/* Reply form styling */
+.reply-form {
+    margin-top: 10px;
+}
+
+.reply-form textarea {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+}
+
+.reply-form button {
+    width: 100%;
+}
+
+/* Back Button Styling */
+.back-button {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 1rem 1.5rem;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.back-button:hover {
+    background-color: #384064;
+}
+
+/* Footer */
+footer {
+    background-color: #6351e4;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 1rem;
+        position: relative;
+        z-index: 1000;
+    }
+
+    header nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    .forum-banner h1 {
+        font-size: 2.5rem;
+    }
+
+    .forum-banner p {
+        font-size: 1.2rem;
+    }
+
+    .posts {
+        padding: 1.5rem;
+    }
+
+
+    .post {
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .post-form {
+        padding: 1.5rem;
+    }
+
+    .post-form input[type="text"] {
+        font-size: 1.2rem;
+    }
+
+    textarea {
+        font-size: 1rem;
+    }
+
+    button {
+        padding: 0.8rem 1.5rem;
+    }
+
+    .replies-section h4 {
+        font-size: 1em;
+    }
+
+    .replies p {
+        font-size: 0.9em;
+        margin-left: 15px;
+    }
+
+    .reply-form textarea {
+        font-size: 1em;
+    }
+
+    .reply-form button {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .back-button {
+        font-size: 1rem;
+        padding: 0.8rem 1.5rem;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+}
